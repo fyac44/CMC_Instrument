@@ -1,0 +1,448 @@
+#N canvas 62 113 1618 846 10;
+#X obj 830 594 vsl 15 121 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 11200 1;
+#X floatatom 830 726 5 0 0 0 - - a1;
+#X obj 828 422 vradio 15 1 0 10 n1 empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X text 818 421 1;
+#X text 818 436 2;
+#X text 818 451 3;
+#X text 818 466 4;
+#X text 818 481 5;
+#X text 818 496 6;
+#X text 818 511 7;
+#X text 818 526 8;
+#X text 818 541 9;
+#X text 812 556 10;
+#X text 323 245 dB;
+#X obj 849 629 vsl 15 51 -0.05 0.05 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 2500 1;
+#X floatatom 849 688 5 0 0 0 - - d1;
+#X obj 208 100 vsl 15 51 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 208 159 5 0 0 0 - - p1;
+#X text 230 16 OSCILATOR 1;
+#X text 661 777 Amount;
+#X text 204 271 Detune;
+#X text 206 176 Phase;
+#X text 242 254 *100%;
+#X text 240 159 cycles;
+#X obj 886 595 vsl 15 121 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 10000 1;
+#X floatatom 886 727 5 0 0 0 - - a2;
+#X obj 843 422 vradio 15 1 0 10 n2 empty empty 0 -8 0 10 -262144 -1
+-1 2;
+#X text 164 372 1;
+#X text 164 387 2;
+#X text 164 402 3;
+#X text 164 417 4;
+#X text 164 432 5;
+#X text 164 447 6;
+#X text 164 462 7;
+#X text 164 477 8;
+#X text 164 492 9;
+#X text 158 507 10;
+#X text 603 778 dB;
+#X obj 905 628 vsl 15 51 -0.05 0.05 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 2500 1;
+#X floatatom 905 687 5 0 0 0 - - d2;
+#X obj 214 365 vsl 15 51 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 214 424 5 0 0 0 - - p2;
+#X text 107 421 Harmonic Number, f 8;
+#X text 663 764 Amount;
+#X text 210 536 Detune;
+#X text 212 441 Phase;
+#X text 248 519 *100%;
+#X text 246 424 cycles;
+#X text 226 289 OSCILATOR 2;
+#X text 586 706 Harmonic Number, f 8;
+#X obj 942 595 vsl 15 121 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8800 1;
+#X floatatom 942 727 5 0 0 0 - - a3;
+#X obj 858 422 vradio 15 1 0 10 n3 empty empty 0 -8 0 10 -262144 -1
+-1 4;
+#X text 167 654 1;
+#X text 167 669 2;
+#X text 167 684 3;
+#X text 167 699 4;
+#X text 167 714 5;
+#X text 167 729 6;
+#X text 167 744 7;
+#X text 167 759 8;
+#X text 167 774 9;
+#X text 161 789 10;
+#X text 332 792 dB;
+#X obj 961 628 vsl 15 51 -0.05 0.05 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 2500 1;
+#X floatatom 961 687 5 0 0 0 - - d3;
+#X obj 217 647 vsl 15 51 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 217 706 5 0 0 0 - - p3;
+#X text 114 705 Harmonic Number, f 8;
+#X text 317 771 Amount;
+#X text 213 818 Detune;
+#X text 215 723 Phase;
+#X text 251 801 *100%;
+#X text 249 706 cycles;
+#X text 227 565 OSCILATOR 3;
+#X obj 997 595 vsl 15 121 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 7600 1;
+#X floatatom 997 727 5 0 0 0 - - a4;
+#X obj 873 422 vradio 15 1 0 10 n4 empty empty 0 -8 0 10 -262144 -1
+-1 6;
+#X text 396 106 1;
+#X text 396 121 2;
+#X text 396 136 3;
+#X text 396 151 4;
+#X text 396 166 5;
+#X text 396 181 6;
+#X text 396 196 7;
+#X text 396 211 8;
+#X text 396 226 9;
+#X text 390 241 10;
+#X text 561 244 dB;
+#X obj 1016 628 vsl 15 51 -0.05 0.05 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 2500 1;
+#X floatatom 1016 687 5 0 0 0 - - d4;
+#X obj 446 99 vsl 15 51 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 446 158 5 0 0 0 - - p4;
+#X text 344 139 Harmonic Number, f 8;
+#X text 546 223 Amount;
+#X text 442 270 Detune;
+#X text 444 175 Phase;
+#X text 482 253 *100%;
+#X text 478 158 cycles;
+#X text 452 14 OSCILATOR 4;
+#X obj 1053 595 vsl 15 121 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 6400 1;
+#X floatatom 1053 727 5 0 0 0 - - a5;
+#X obj 888 422 vradio 15 1 0 10 n5 empty empty 0 -8 0 10 -262144 -1
+-1 8;
+#X text 400 373 1;
+#X text 400 388 2;
+#X text 400 403 3;
+#X text 400 418 4;
+#X text 400 433 5;
+#X text 400 448 6;
+#X text 400 463 7;
+#X text 400 478 8;
+#X text 400 493 9;
+#X text 394 508 10;
+#X text 565 511 dB;
+#X obj 1072 627 vsl 15 51 -0.05 0.05 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 2500 1;
+#X floatatom 1072 686 5 0 0 0 - - d5;
+#X obj 450 366 vsl 15 51 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 450 425 5 0 0 0 - - p5;
+#X text 344 405 Harmonic Number, f 8;
+#X text 550 490 Amount;
+#X text 446 537 Detune;
+#X text 448 442 Phase;
+#X text 484 520 *100%;
+#X text 482 425 cycles;
+#X text 452 289 OSCILATOR 5;
+#X obj 975 443 vsl 15 91 0 0.3 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 1012 442 vsl 15 91 0.01 10 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8709 1;
+#X text 469 607 NOISE GENERATOR;
+#X floatatom 975 543 5 0 0 0 - - na;
+#X floatatom 1012 542 5 0 0 0 - - nq;
+#X text 1029 460 Band-Pass Filter Q Factor, f 9;
+#X obj 1111 427 vsl 15 300 0.2 20 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8097 1;
+#X floatatom 1111 736 5 0 0 0 - - pg;
+#X text 1082 391 Pre-Gain Distorsion, f 10;
+#X obj 1171 427 vsl 15 300 1 500 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 300 1;
+#X floatatom 1171 736 5 0 0 0 - - ea;
+#X text 1155 402 Attack;
+#X obj 1231 425 vsl 15 300 1 200 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1799 1;
+#X floatatom 1231 735 5 0 0 0 - - ea;
+#X text 1217 402 Decay;
+#X text 1205 737 ms;
+#X text 1265 737 ms;
+#X obj 1286 425 vsl 15 300 0.01 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 14980 1;
+#X floatatom 1286 735 5 0 0 0 - - es;
+#X text 1269 402 Sustain;
+#X text 1307 720 *100%;
+#X obj 1350 425 vsl 15 300 1 1000 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 16997 1;
+#X floatatom 1350 735 5 0 0 0 - - er;
+#X text 1384 737 ms;
+#X text 1332 403 Release;
+#X obj 1406 424 vsl 15 300 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 18897 1;
+#X floatatom 1406 734 5 0 0 0 - - vol;
+#X text 1388 403 Volumen;
+#X text 1125 61 Every oscillator have a vertical radio buttons array
+to select the harmonic number \, the phase measured in cycles \, a
+detuning control which bend the harmonic frequency by a percentage
+amount and finally the amount control which determine how much of this
+harmonic ends up in the final note signal., f 81;
+#X text 923 461 Ammount of noise, f 8;
+#X text 1126 120 There is also a noise generator \, the noise is filtered
+by a band-pass filter with center frequency at the note that its being
+played. The amount of noise added to the note signal and the Q factor
+of the band-pass filter can be controlled., f 81;
+#X obj 33 358 Polyphonic2;
+#X obj 33 330 inlet;
+#X obj 96 330 inlet;
+#X obj 316 17 loadbang;
+#X obj 335 287 loadbang;
+#X obj 356 564 loadbang;
+#X obj 730 58 loadbang;
+#X msg 208 67 0;
+#X msg 250 68 0;
+#X msg 446 66 0;
+#X msg 488 67 0;
+#X msg 214 335 0;
+#X msg 217 617 0;
+#X msg 450 335 0;
+#X msg 492 336 0;
+#X msg 832 87 568.9;
+#X msg 759 86 0.506;
+#X msg 625 88 6.006;
+#X msg 519 655 8;
+#X msg 897 87 0.632;
+#X text 1125 1 This is an additive synthesizer \, polyphonic for 8
+simultaneous notes and with 5 oscillator each. It works with MIDI inputs
+\, the main flowchart is contained in the object [Polyphonic2] at the
+left and its output is sent directly to the outlet., f 81;
+#X text 1127 169 At the top right there are 6 vertical slides which
+control pre-gain \, envelope of the signal and volumen. The pre-gain
+slider is used to hard clipping the signal and to obtain a square-shape
+signal. Once the waveform of the note is builded \, and envelope is
+applied using the Attack \, Decay \, Sustain and Release sliders. All
+the parameters are in miliseconds in execption with the sustain that
+is a percentage of the highest peak of the signal., f 81;
+#X text 1127 241 The output gain is controlled by the volumen slider
+which is at the end of the signal chain, f 81;
+#X text 1234 103 Franklin Alvarez Computational Music Creativity Lab
+03: Markov Sequencer;
+#X msg 694 86 12.97;
+#X msg 556 88 0.696;
+#X msg 527 67 78;
+#X msg 406 65 6;
+#X msg 410 334 8;
+#X msg 531 336 72;
+#X msg 448 656 0;
+#X msg 298 618 84;
+#X msg 255 618 0;
+#X msg 177 616 4;
+#X msg 174 334 2;
+#X msg 168 66 0;
+#X msg 289 68 96;
+#X msg 295 336 90;
+#X msg 247 335 0;
+#X obj 636 270 inlet;
+#X obj 670 270 inlet;
+#X obj 772 270 inlet;
+#X obj 738 270 inlet;
+#X obj 704 270 inlet;
+#X msg 968 86 0;
+#X obj 23 382 dac~;
+#X obj 826 270 inlet;
+#X obj 860 270 inlet;
+#X obj 962 270 inlet;
+#X obj 928 270 inlet;
+#X obj 894 270 inlet;
+#X obj 1022 270 inlet;
+#X obj 1056 270 inlet;
+#X obj 1158 270 inlet;
+#X obj 1124 270 inlet;
+#X obj 1090 270 inlet;
+#X obj 636 346 + 40;
+#X obj 670 346 + 40;
+#X obj 704 346 + 40;
+#X obj 738 346 + 40;
+#X obj 772 346 + 40;
+#X obj 636 324 * 60;
+#X obj 670 324 * 60;
+#X obj 704 324 * 60;
+#X obj 738 324 * 60;
+#X obj 772 324 * 60;
+#X obj 636 303 / 127;
+#X obj 670 303 / 127;
+#X obj 704 303 / 127;
+#X obj 738 303 / 127;
+#X obj 772 303 / 127;
+#X obj 826 302 / 127;
+#X obj 860 302 / 127;
+#X obj 894 302 / 127;
+#X obj 928 302 / 127;
+#X obj 962 302 / 127;
+#X obj 1022 302 / 127;
+#X obj 1056 302 / 127;
+#X obj 1090 302 / 127;
+#X obj 1124 302 / 127;
+#X obj 1158 302 / 127;
+#X obj 826 324 * 0.1;
+#X obj 860 324 * 0.1;
+#X obj 894 324 * 0.1;
+#X obj 962 324 * 0.1;
+#X obj 811 346 - 0.05;
+#X obj 851 346 - 0.05;
+#X obj 891 346 - 0.05;
+#X obj 931 346 - 0.05;
+#X obj 971 346 - 0.05;
+#X obj 928 324 * 0.1;
+#X obj 1056 346 + 1;
+#X obj 1090 346 + 1;
+#X obj 1124 346 + 0.01;
+#X obj 1124 324 * 0.99;
+#X obj 1164 346 + 1;
+#X obj 1164 324 * 999;
+#X obj 1090 324 * 199;
+#X obj 1056 324 * 499;
+#X obj 1022 346 + 0.2;
+#X obj 1022 324 * 20;
+#X connect 0 0 1 0;
+#X connect 14 0 15 0;
+#X connect 16 0 17 0;
+#X connect 24 0 25 0;
+#X connect 38 0 39 0;
+#X connect 40 0 41 0;
+#X connect 50 0 51 0;
+#X connect 64 0 65 0;
+#X connect 66 0 67 0;
+#X connect 75 0 76 0;
+#X connect 89 0 90 0;
+#X connect 91 0 92 0;
+#X connect 100 0 101 0;
+#X connect 114 0 115 0;
+#X connect 116 0 117 0;
+#X connect 125 0 128 0;
+#X connect 126 0 129 0;
+#X connect 131 0 132 0;
+#X connect 134 0 135 0;
+#X connect 137 0 138 0;
+#X connect 142 0 143 0;
+#X connect 146 0 147 0;
+#X connect 150 0 151 0;
+#X connect 156 0 201 0;
+#X connect 156 0 201 1;
+#X connect 157 0 156 0;
+#X connect 158 0 156 1;
+#X connect 159 0 191 0;
+#X connect 159 0 163 0;
+#X connect 159 0 164 0;
+#X connect 159 0 192 0;
+#X connect 159 0 183 0;
+#X connect 159 0 165 0;
+#X connect 159 0 166 0;
+#X connect 159 0 182 0;
+#X connect 160 0 190 0;
+#X connect 160 0 167 0;
+#X connect 160 0 194 0;
+#X connect 160 0 193 0;
+#X connect 160 0 184 0;
+#X connect 160 0 169 0;
+#X connect 160 0 170 0;
+#X connect 160 0 185 0;
+#X connect 161 0 189 0;
+#X connect 161 0 168 0;
+#X connect 161 0 188 0;
+#X connect 161 0 187 0;
+#X connect 161 0 186 0;
+#X connect 161 0 174 0;
+#X connect 162 0 181 0;
+#X connect 162 0 173 0;
+#X connect 162 0 180 0;
+#X connect 162 0 172 0;
+#X connect 162 0 171 0;
+#X connect 162 0 175 0;
+#X connect 162 0 200 0;
+#X connect 163 0 16 0;
+#X connect 164 0 14 0;
+#X connect 165 0 91 0;
+#X connect 166 0 89 0;
+#X connect 167 0 40 0;
+#X connect 168 0 66 0;
+#X connect 169 0 116 0;
+#X connect 170 0 114 0;
+#X connect 171 0 146 0;
+#X connect 172 0 142 0;
+#X connect 173 0 134 0;
+#X connect 174 0 126 0;
+#X connect 175 0 150 0;
+#X connect 180 0 137 0;
+#X connect 181 0 131 0;
+#X connect 182 0 75 0;
+#X connect 183 0 77 0;
+#X connect 184 0 102 0;
+#X connect 185 0 100 0;
+#X connect 186 0 125 0;
+#X connect 187 0 50 0;
+#X connect 188 0 64 0;
+#X connect 189 0 52 0;
+#X connect 190 0 26 0;
+#X connect 191 0 2 0;
+#X connect 192 0 0 0;
+#X connect 193 0 24 0;
+#X connect 194 0 38 0;
+#X connect 195 0 222 0;
+#X connect 196 0 223 0;
+#X connect 197 0 226 0;
+#X connect 198 0 225 0;
+#X connect 199 0 224 0;
+#X connect 202 0 227 0;
+#X connect 203 0 228 0;
+#X connect 204 0 231 0;
+#X connect 205 0 230 0;
+#X connect 206 0 229 0;
+#X connect 207 0 232 0;
+#X connect 208 0 233 0;
+#X connect 209 0 236 0;
+#X connect 210 0 235 0;
+#X connect 211 0 234 0;
+#X connect 212 0 0 0;
+#X connect 213 0 24 0;
+#X connect 214 0 50 0;
+#X connect 215 0 75 0;
+#X connect 216 0 100 0;
+#X connect 217 0 212 0;
+#X connect 218 0 213 0;
+#X connect 219 0 214 0;
+#X connect 220 0 215 0;
+#X connect 221 0 216 0;
+#X connect 222 0 217 0;
+#X connect 223 0 218 0;
+#X connect 224 0 219 0;
+#X connect 225 0 220 0;
+#X connect 226 0 221 0;
+#X connect 227 0 237 0;
+#X connect 228 0 238 0;
+#X connect 229 0 239 0;
+#X connect 230 0 246 0;
+#X connect 231 0 240 0;
+#X connect 232 0 256 0;
+#X connect 233 0 254 0;
+#X connect 234 0 253 0;
+#X connect 235 0 250 0;
+#X connect 236 0 252 0;
+#X connect 237 0 241 0;
+#X connect 238 0 242 0;
+#X connect 239 0 243 0;
+#X connect 240 0 245 0;
+#X connect 241 0 14 0;
+#X connect 242 0 38 0;
+#X connect 243 0 64 0;
+#X connect 244 0 89 0;
+#X connect 245 0 114 0;
+#X connect 246 0 244 0;
+#X connect 247 0 134 0;
+#X connect 248 0 137 0;
+#X connect 250 0 249 0;
+#X connect 251 0 146 0;
+#X connect 252 0 251 0;
+#X connect 253 0 248 0;
+#X connect 254 0 247 0;
+#X connect 255 0 131 0;
+#X connect 256 0 255 0;
+#X coords 0 -1 1 1 650 400 1 800 380;
