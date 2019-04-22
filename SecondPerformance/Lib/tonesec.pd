@@ -1,0 +1,74 @@
+#N canvas 658 381 719 643 10;
+#X obj 69 26 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 69 46 metro 300;
+#X obj 69 77 float;
+#X obj 130 76 + 1;
+#X floatatom 69 104 5 0 0 0 - - -;
+#X obj 68 137 mod 4;
+#X obj 67 178 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 1;
+#X obj 67 216 select 0 1 2 3;
+#X obj 102 249 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4107 1;
+#X obj 312 395 float;
+#X obj 258 395 float;
+#X obj 208 395 float;
+#X obj 72 395 float;
+#X obj 69 446 mtof;
+#X obj 69 480 osc~;
+#X text 309 60 SLIDE ACID SEQUENCER A four step basic sequencer used
+for generate a basic rhythmic pattern with the sliders 2 \, 3 and 4
+and use the slide 1 to map the variations in pitch. The time is regulated
+by the metro object and second inlet is used for altering the creation
+of the argument. A counter is set up by a float number and an arithmetic
+object which will set up the counting of the object. Mod object define
+the number of steps. The select distributes the channels in the sequencer
+and the sliders are connected to an oscillator for adjusting the pitch
+of each step in the sequence. The incoming MIDI numbers are transformed
+into frequency and this frequency is sent to the oscillator.;
+#X obj 69 5 inlet;
+#X obj 212 177 inlet;
+#X obj 68 533 outlet~;
+#X obj 238 293 r f2;
+#X obj 285 292 r f3;
+#X obj 338 292 r f4;
+#X obj 118 20 inlet;
+#X obj 154 526 SineOscillator;
+#X obj 69 509 *~ 0.5;
+#X obj 236 430 loadbang;
+#X msg 210 457 0.03;
+#X connect 0 0 1 0;
+#X connect 0 0 24 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 12 0;
+#X connect 7 1 11 0;
+#X connect 7 2 10 0;
+#X connect 7 3 9 0;
+#X connect 8 0 12 1;
+#X connect 9 0 14 0;
+#X connect 9 0 23 0;
+#X connect 10 0 14 0;
+#X connect 10 0 23 0;
+#X connect 11 0 14 0;
+#X connect 11 0 23 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 0 23 0;
+#X connect 14 0 24 0;
+#X connect 16 0 0 0;
+#X connect 17 0 8 0;
+#X connect 19 0 11 1;
+#X connect 20 0 10 1;
+#X connect 21 0 9 1;
+#X connect 22 0 1 1;
+#X connect 23 0 24 0;
+#X connect 24 0 18 0;
+#X connect 25 0 26 0;
+#X connect 26 0 23 1;

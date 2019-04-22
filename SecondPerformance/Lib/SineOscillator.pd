@@ -1,0 +1,17 @@
+#N canvas 511 101 352 211 10;
+#X obj 37 123 osc~;
+#X obj 37 101 +;
+#X obj 52 77 * 0;
+#X obj 37 146 outlet~;
+#X obj 37 33 inlet;
+#X obj 67 56 inlet;
+#X text 127 93 Franklin Alvarez;
+#X text 118 36 1st inlet: Frequency in Hz 2nd inlet: detune in % outlet:
+sine wave, f 27;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 4 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 1;
+#X coords 0 211 1 210 118 188 0;

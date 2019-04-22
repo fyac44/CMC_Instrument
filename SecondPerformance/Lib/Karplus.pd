@@ -1,0 +1,33 @@
+#N canvas 139 183 352 336 10;
+#X obj 56 27 noise~;
+#X obj 56 131 *~;
+#X obj 96 166 delread~ cats 20;
+#X floatatom 96 145 5 0 0 0 - - -;
+#X obj 71 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 71 54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 96 231 lop~;
+#X floatatom 117 210 5 0 0 0 - - -;
+#X obj 57 305 delwrite~ cats 200;
+#X obj 98 82 delay 20;
+#X obj 125 28 inlet;
+#X obj 96 122 r ktone;
+#X obj 117 189 r kdel;
+#X obj 96 281 outlet~;
+#X obj 96 258 *~ 1;
+#X connect 0 0 1 0;
+#X connect 1 0 8 0;
+#X connect 2 0 6 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 0;
+#X connect 5 0 9 0;
+#X connect 6 0 8 0;
+#X connect 6 0 14 0;
+#X connect 7 0 6 1;
+#X connect 9 0 4 0;
+#X connect 10 0 5 0;
+#X connect 11 0 3 0;
+#X connect 12 0 7 0;
+#X connect 14 0 13 0;
